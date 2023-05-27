@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>URL Hash Builder</title>
+
+    <style>
+        #resultsDiv,
+        #loaderSection,
+        #copy-btn,
+        #copiedRow {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Image and text -->
+    <div class="container">
+        <div class="row header-row">
+            <div class="col">
+                <div class="card bg-dark text-center banner">
+                    <h3 class="header-text">URL Hash Builder &nbsp;
+                        <img src="assets/img/www.png" alt="" style="width: max-content; height: max-content;">
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="inputSection">
+                <div class="card" id="inputCard">
+                    <div class="card-header text-center">
+                        <p class="desc-header">Are you tired of losing data due to long URLs in your marketing
+                            campaigns ? </p>
+                        <p class="desc-content">
+                            Our secure solution using hashed URLs guarantees the success of your campaigns while prioritizing customer privacy. 
+                            <br>Take your campaigns to the next level with our cutting-edge solution. 
+                        </p>
+                    </div>
+                    <div class="card-body">
+                        <form action="#" id="inputForm">
+                            <div class="input-group">
+                                <span class="input-group-text">Base URL</span>
+                                <input type="text" class="form-control" placeholder="Enter Base URL" id="urlInputField">
+                            </div>
+                            <hr class="my-3">
+
+                            <div class="input-group my-3">
+                                <span class="input-group-text">UTM Source</span>
+                                <input type="text" class="form-control" placeholder="Enter Source"
+                                    id="sourceInputField">
+                            </div>
+
+                            <div class="input-group my-3">
+                                <span class="input-group-text">UTM Medium</span>
+                                <input type="text" class="form-control" placeholder="Enter Medium"
+                                    id="mediumInputFiled">
+                            </div>
+
+                            <div class="input-group my-3">
+                                <span class="input-group-text">UTM Campaign</span>
+                                <input type="text" class="form-control" placeholder="Enter Campaign Name"
+                                    id="campaign_nameInputField">
+                            </div>
+
+                            <div class="input-group my-3">
+                                <span class="input-group-text">UTM Term</span>
+                                <input type="text" class="form-control" placeholder="Enter Term" id="inputTerm">
+                            </div>
+
+                            <div class="input-group my-3">
+                                <span class="input-group-text">UTM Content</span>
+                                <input type="text" class="form-control" placeholder="Enter Content" id="inputContent">
+                            </div>
+
+                            <div class="input-group my-3">
+                                <input type="submit" class="btn btn-outline-success btn-block"
+                                    value="Generate Hashed URL">
+                            </div>
+
+                        </form>
+
+                        <!-- Loader icon -->
+                        <div class="row" id="loaderSection">
+                            <div class="col">
+                                <div class="text-center">
+                                    <img src="assets/img/loader.svg" alt="loader icon" class="rounded">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="card" id="resultsDiv"></div>
+                            </div>
+                        </div>
+
+                        <div class="input-group my-3">
+                            <input type="submit" class="btn btn-outline-success btn-block copy-btn" id="copy-btn"
+                                value="Copy Generated URL" onclick="copyURL()">
+                        </div>
+
+                        <div class="row" id="copiedRow">
+                            <div class="col">
+                                <div class="card-body bg-light lead text-center" id="copiedDiv">
+                                    URL Copied to Clipboard !
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row header-row">
+            <div class="col">
+                <div class="card bg-dark text-center banner">
+                    <h3 class="footer-text">© 2023 All Rights Reserved</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<script src="assets/js/generateURL.js" type="text/javascript"></script>
+</body>
+
+</html>
