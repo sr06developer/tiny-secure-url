@@ -36,7 +36,7 @@ const hashUrlMapCollection = "hashURLMapping";
 const json2csvParser = new Json2csvParser({ header: true });
 
 app.use(express.json());
-app.use(cors)
+
 app.use(express.static(path.join(__dirname, "/UI")));
 app.use("/assets/css", express.static("assets/css"));
 app.use("/assets/img", express.static("assets/img"));
