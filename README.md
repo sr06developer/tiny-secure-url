@@ -30,4 +30,8 @@ A solution to ensure guaranteed success of campaigns without data loss from UTM 
 
 # Solution Architecture Diagram
 
-![FlowDiagram](/UI/assets/img/flow1.png)  
+![FlowDiagram](/UI/assets/img/flow1.png)
+
+# Link to Demo Video
+
+![DemoVideo](https://1drv.ms/v/s!AgqAaymBEiKQfFazPJz0Wigdjsg?e=g3iKpn)
