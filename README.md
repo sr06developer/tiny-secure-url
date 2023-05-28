@@ -34,4 +34,4 @@ A solution to ensure guaranteed success of campaigns without data loss from UTM 
 
 # Link to Demo Video
 
-![DemoVideo](https://1drv.ms/v/s!AgqAaymBEiKQfFazPJz0Wigdjsg?e=g3iKpn)
+### https://1drv.ms/v/s!AgqAaymBEiKQfFazPJz0Wigdjsg?e=g3iKpn
